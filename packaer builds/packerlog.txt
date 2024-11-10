@@ -1,0 +1,90 @@
+2024/11/04 19:30:48 [INFO] Packer version: 1.11.2 [go1.21.12 windows 386]
+2024/11/04 19:30:48 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2024/11/04 19:30:48 [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:48 [WARN] Config file doesn't exist: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:48 [INFO] Setting cache directory: C:\packaer builds\packer_cache
+e: cannot determine if process is in background: Process background check error: not implemented yet
+2024/11/04 19:30:48 [TRACE] listing potential installations for <nil> that match "". plugingetter.ListInstallationsOptions{PluginDirectory:"C:\\Users\\kotai\\AppData\\Roaming\\packer.d\\plugins", BinaryInstallationOptions:plugingetter.BinaryInstallationOptions{APIVersionMajor:"5", APIVersionMinor:"0", OS:"windows", ARCH:"386", Ext:".exe", Checksummers:[]plugingetter.Checksummer{plugingetter.Checksummer{Type:"sha256", Hash:(*sha256.digest)(0xcd70230)}}, ReleasesOnly:false}}
+2024/11/04 19:30:49 [INFO] found external [chroot ebs ebssurrogate ebsvolume instance] builders from amazon plugin
+2024/11/04 19:30:49 [INFO] found external [import] post-processors from amazon plugin
+2024/11/04 19:30:49 found external [ami parameterstore secretsmanager] datasource from amazon plugin
+2024/11/04 19:30:49 found external [-packer-default-plugin-name- local] provisioner from ansible plugin
+2024/11/04 19:30:49 [TRACE] validateValue: not active for region, so skipping
+2024/11/04 19:30:49 [INFO] Starting external plugin C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe start builder ebs
+2024/11/04 19:30:49 Starting plugin: C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe []string{"C:\\Users\\kotai\\AppData\\Roaming\\packer.d\\plugins\\github.com\\hashicorp\\amazon\\packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe", "start", "builder", "ebs"}
+2024/11/04 19:30:49 Waiting for RPC address for: C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe
+2024/11/04 19:30:49 packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Plugin port range: [10000,25000]
+2024/11/04 19:30:49 packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Plugin address: tcp 127.0.0.1:10000
+2024/11/04 19:30:49 packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Waiting for connection...
+2024/11/04 19:30:49 Received tcp RPC address for C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe: addr is 127.0.0.1:10000
+2024/11/04 19:30:49 packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Serving a plugin connection...
+2024/11/04 19:30:49 packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 [TRACE] starting builder ebs
+2024/11/04 19:30:49 packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 [INFO] (aws): No AWS timeout and polling overrides have been set. Packer will default to waiter-specific delays and timeouts. If you would like to customize the length of time between retries and max number of retries you may do so by setting the environment variables AWS_POLL_DELAY_SECONDS and AWS_MAX_ATTEMPTS or the configuration options aws_polling_delay_seconds and aws_polling_max_attempts to your desired values.
+2024/11/04 19:30:49 [INFO] Starting internal plugin packer-provisioner-powershell
+2024/11/04 19:30:49 Starting plugin: c:\packer\packer.exe []string{"c:\\packer\\packer.exe", "execute", "packer-provisioner-powershell"}
+2024/11/04 19:30:49 Waiting for RPC address for: c:\packer\packer.exe
+2024/11/04 19:30:49 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows 386]
+2024/11/04 19:30:49 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2024/11/04 19:30:49 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:49 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:49 packer.exe plugin: [INFO] Setting cache directory: C:\packaer builds\packer_cache
+2024/11/04 19:30:49 packer.exe plugin: args: []string{"packer-provisioner-powershell"}
+2024/11/04 19:30:49 packer.exe plugin: Plugin port range: [10000,25000]
+2024/11/04 19:30:49 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2024/11/04 19:30:49 Received tcp RPC address for c:\packer\packer.exe: addr is 127.0.0.1:10000
+2024/11/04 19:30:49 packer.exe plugin: Waiting for connection...
+2024/11/04 19:30:49 packer.exe plugin: Serving a plugin connection...
+2024/11/04 19:30:49 [INFO] Starting external plugin C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\ansible\packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe start provisioner -packer-default-plugin-name-
+2024/11/04 19:30:49 Starting plugin: C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\ansible\packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe []string{"C:\\Users\\kotai\\AppData\\Roaming\\packer.d\\plugins\\github.com\\hashicorp\\ansible\\packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe", "start", "provisioner", "-packer-default-plugin-name-"}
+2024/11/04 19:30:49 Waiting for RPC address for: C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\ansible\packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe
+2024/11/04 19:30:49 packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Plugin port range: [10000,25000]
+2024/11/04 19:30:49 packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Plugin address: tcp 127.0.0.1:10000
+2024/11/04 19:30:49 Received tcp RPC address for C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\ansible\packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe: addr is 127.0.0.1:10000
+2024/11/04 19:30:49 packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Waiting for connection...
+2024/11/04 19:30:49 packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 Serving a plugin connection...
+2024/11/04 19:30:49 packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe plugin: 2024/11/04 19:30:49 [TRACE] starting provisioner -packer-default-plugin-name-
+2024/11/04 19:30:49 [INFO] Starting internal plugin packer-provisioner-windows-restart
+2024/11/04 19:30:49 Starting plugin: c:\packer\packer.exe []string{"c:\\packer\\packer.exe", "execute", "packer-provisioner-windows-restart"}
+2024/11/04 19:30:49 Waiting for RPC address for: c:\packer\packer.exe
+2024/11/04 19:30:49 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows 386]
+2024/11/04 19:30:49 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2024/11/04 19:30:49 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:49 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:49 packer.exe plugin: [INFO] Setting cache directory: C:\packaer builds\packer_cache
+2024/11/04 19:30:49 packer.exe plugin: args: []string{"packer-provisioner-windows-restart"}
+2024/11/04 19:30:49 packer.exe plugin: Plugin port range: [10000,25000]
+2024/11/04 19:30:49 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2024/11/04 19:30:49 Received tcp RPC address for c:\packer\packer.exe: addr is 127.0.0.1:10000
+2024/11/04 19:30:49 packer.exe plugin: Waiting for connection...
+2024/11/04 19:30:49 packer.exe plugin: Serving a plugin connection...
+2024/11/04 19:30:49 [INFO] Starting internal plugin packer-provisioner-powershell
+2024/11/04 19:30:49 Starting plugin: c:\packer\packer.exe []string{"c:\\packer\\packer.exe", "execute", "packer-provisioner-powershell"}
+2024/11/04 19:30:49 Waiting for RPC address for: c:\packer\packer.exe
+2024/11/04 19:30:49 packer.exe plugin: [INFO] Packer version: 1.11.2 [go1.21.12 windows 386]
+2024/11/04 19:30:49 packer.exe plugin: [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2024/11/04 19:30:49 packer.exe plugin: [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:49 packer.exe plugin: [WARN] Config file doesn't exist: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:30:49 packer.exe plugin: [INFO] Setting cache directory: C:\packaer builds\packer_cache
+2024/11/04 19:30:49 packer.exe plugin: args: []string{"packer-provisioner-powershell"}
+2024/11/04 19:30:49 packer.exe plugin: Plugin port range: [10000,25000]
+2024/11/04 19:30:49 packer.exe plugin: Plugin address: tcp 127.0.0.1:10000
+2024/11/04 19:30:49 Received tcp RPC address for c:\packer\packer.exe: addr is 127.0.0.1:10000
+2024/11/04 19:30:49 packer.exe plugin: Waiting for connection...
+2024/11/04 19:30:49 packer.exe plugin: Serving a plugin connection...
+2024/11/04 19:30:49 ui error: Error: Failed preparing provisioner-block "ansible" ""
+
+  on .\packer4.pkr.hcl line 49:
+  (source code not available)
+
+1 error(s) occurred:
+
+* Error running "ansible-playbook --version": exec: "ansible-playbook":
+executable file not found in %PATH%
+
+2024/11/04 19:30:49 [INFO] (telemetry) Finalizing.
+2024/11/04 19:30:50 waiting for all plugin processes to complete...
+2024/11/04 19:30:50 C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\amazon\packer-plugin-amazon_v1.3.2_x5.0_windows_386.exe: plugin process exited
+2024/11/04 19:30:50 c:\packer\packer.exe: plugin process exited
+2024/11/04 19:30:50 c:\packer\packer.exe: plugin process exited
+2024/11/04 19:30:50 C:\Users\kotai\AppData\Roaming\packer.d\plugins\github.com\hashicorp\ansible\packer-plugin-ansible_v1.1.2_x5.0_windows_386.exe: plugin process exited
+2024/11/04 19:30:50 c:\packer\packer.exe: plugin process exited

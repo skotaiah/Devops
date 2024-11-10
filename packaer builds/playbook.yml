@@ -1,0 +1,22 @@
+--- 
+- name: install vnc
+  hosts: 127.0.0.1
+  become: yes
+  connection: local
+  tasks:
+    - name: copy Files
+      ansible.windows.win_copy:
+        src: "VNC-Viewer-7.12.1-Windows.zip"
+        dest: /test5/
+
+    - name: unzip
+      community.windows.win_unzip:
+        src: C:\test5\VNC-Viewer-7.12.1-Windows.zip
+        dest: c:\test5
+          
+
+    - name: install vnc player
+      ansible.windows.win_package:
+        path: C:\test5\VNC-Viewer-7.12.1-Windows.exe
+        create_path: c:\program Files\vnc
+        state: present

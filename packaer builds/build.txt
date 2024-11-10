@@ -1,0 +1,81 @@
+2024/11/04 19:04:13 [INFO] Packer version: 1.11.2 [go1.21.12 windows 386]
+2024/11/04 19:04:13 [INFO] PACKER_CONFIG env var not set; checking the default config file path
+2024/11/04 19:04:13 [INFO] PACKER_CONFIG env var set; attempting to open config file: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:04:13 [WARN] Config file doesn't exist: C:\Users\kotai\AppData\Roaming\packer.config
+2024/11/04 19:04:13 [INFO] Setting cache directory: C:\packaer builds\packer_cache
+e: cannot determine if process is in background: Process background check error: not implemented yet
+Error: Duplicate variable
+
+Duplicate region variable definition found.
+
+
+Error: Duplicate variable
+Duplicate region variable definition found.
+
+Error: Duplicate variable
+
+Duplicate region variable definition found.
+
+Error: Duplicate variable
+
+Duplicate region variable definition found.
+
+Error: Duplicate local definition
+
+  on packer2.pkr.hcl line 6, in locals:
+   6: locals { timestamp = regex_replace(timestamp(), "[- TZ:]", "") }
+
+Local variable "timestamp" is defined twice in your templates. Other definition
+found at "packer.pkr.hcl:6,22-63"
+
+Error: Duplicate local definition
+
+  on packer3.pkr.hcl line 6, in locals:
+   6: locals { timestamp = regex_replace(timestamp(), "[- TZ:]", "") }
+
+Local variable "timestamp" is defined twice in your templates. Other definition
+found at "packer.pkr.hcl:6,22-63"
+
+Error: Duplicate local definition
+
+  on packer4.pkr.hcl line 6, in locals:
+   6: locals { timestamp = regex_replace(timestamp(), "[- TZ:]", "") }
+
+Local variable "timestamp" is defined twice in your templates. Other definition
+found at "packer.pkr.hcl:6,22-63"
+
+2024/11/04 19:04:13 [INFO] (telemetry) Finalizing.
+
+Duplicate region variable definition found.
+
+Error: Duplicate variable
+
+Duplicate region variable definition found.
+
+Error: Duplicate local definition
+
+  on packer2.pkr.hcl line 6, in locals:
+   6: locals { timestamp = regex_replace(timestamp(), "[- TZ:]", "") }
+
+Local variable "timestamp" is defined twice in your templates. Other definition
+found at "packer.pkr.hcl:6,22-63"
+
+Error: Duplicate local definition
+
+  on packer3.pkr.hcl line 6, in locals:
+   6: locals { timestamp = regex_replace(timestamp(), "[- TZ:]", "") }
+
+Local variable "timestamp" is defined twice in your templates. Other definition
+found at "packer.pkr.hcl:6,22-63"
+
+Error: Duplicate local definition
+
+  on packer4.pkr.hcl line 6, in locals:
+   6: locals { timestamp = regex_replace(timestamp(), "[- TZ:]", "") }
+
+Local variable "timestamp" is defined twice in your templates. Other definition
+found at "packer.pkr.hcl:6,22-63"
+
+
+2024/11/04 19:04:15 [WARN] (telemetry) Error finalizing report. This is safe to ignore. Post "https://checkpoint-api.hashicorp.com/v1/telemetry/packer": context deadline exceeded
+2024/11/04 19:04:15 waiting for all plugin processes to complete...

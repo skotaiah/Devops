@@ -1,0 +1,1 @@
+C:\test5\VNC-Viewer-7.12.1-Windows.zip -DestinationPath C:\test5
