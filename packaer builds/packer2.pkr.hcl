@@ -10,8 +10,7 @@ source "amazon-ebs" "basic1-example" {
   instance_type = "t2.medium"
   communicator  = "winrm"
   region        = "${var.region}"
-  access_key = "AKIAT4GVRQKTEBDJCBTD"
-  secret_key = "Ecd+kKE4dfRRfnlig/aGsung2mn8d8dFgeg73bTE"
+  
 
   source_ami_filter {
     filters = {
